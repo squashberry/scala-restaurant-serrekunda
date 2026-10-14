@@ -1,5 +1,5 @@
 /* =========================================================
-   FAJARA GARDEN APP
+   Scala Restaurant APP
 ========================================================= */
 
 
@@ -8,208 +8,112 @@
 ========================================================= */
 
 const menuData = [
-
     {
-        id: 1,
-        name: "Garden Grill",
-        description: "Chef's grilled selection served with fresh sides.",
-        price: 420,
-        category: "Food",
-        meals: [
+        "id": 1,
+        "name": "Creamy Pasta",
+        "description": "Sample pasta dish with a rich sauce.",
+        "price": 390,
+        "category": "Food",
+        "meals": [
             "lunch",
             "dinner"
         ],
-        tags: [
-            "grilled",
-            "filling",
-            "savory"
+        "tags": [
+            "pasta",
+            "creamy",
+            "comfort"
         ],
-        image:
-            "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=85"
+        "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1000&q=85"
     },
-
     {
-        id: 2,
-        name: "Garden Special",
-        description: "One of our signature house selections.",
-        price: 350,
-        category: "Food",
-        meals: [
+        "id": 2,
+        "name": "Grilled Steak",
+        "description": "Sample grilled steak with sides.",
+        "price": 620,
+        "category": "Food",
+        "meals": [
+            "breakfast",
             "lunch",
             "dinner"
         ],
-        tags: [
-            "special",
-            "filling",
+        "tags": [
+            "steak",
+            "grilled",
+            "filling"
+        ],
+        "image": "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85"
+    },
+    {
+        "id": 3,
+        "name": "Fish Fillet",
+        "description": "Sample fish fillet with seasonal sides.",
+        "price": 470,
+        "category": "Food",
+        "meals": [
+            "breakfast",
+            "lunch",
+            "dinner"
+        ],
+        "tags": [
+            "fish",
             "savory",
-            "house favorite"
+            "dinner"
         ],
-        image:
-            "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?auto=format&fit=crop&w=1000&q=85"
+        "image": "https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=1000&q=85"
     },
-
     {
-        id: 3,
-        name: "Fresh Garden Bowl",
-        description: "Fresh vegetables, flavourful toppings and dressing.",
-        price: 290,
-        category: "Food",
-        meals: [
+        "id": 4,
+        "name": "Garden Salad",
+        "description": "Sample fresh salad with dressing.",
+        "price": 280,
+        "category": "Food",
+        "meals": [
             "breakfast",
             "lunch",
             "dinner"
         ],
-        tags: [
+        "tags": [
+            "salad",
             "fresh",
-            "light",
-            "healthy",
-            "vegetables"
-        ],
-        image:
-            "https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85"
-    },
-
-    {
-        id: 4,
-        name: "Grilled Chicken",
-        description: "Tender grilled chicken with a smoky finish.",
-        price: 380,
-        category: "Food",
-        meals: [
-            "lunch",
-            "dinner"
-        ],
-        tags: [
-            "grilled",
-            "chicken",
-            "filling",
-            "savory"
-        ],
-        image:
-            "https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=1000&q=85"
-    },
-
-    {
-        id: 5,
-        name: "Garden Fresh Juice",
-        description: "Cold, fresh and made for a hot afternoon.",
-        price: 110,
-        category: "Drinks",
-        meals: [
-            "breakfast",
-            "lunch",
-            "dinner"
-        ],
-        tags: [
-            "fresh",
-            "light",
-            "juice",
-            "cold"
-        ],
-        image:
-            "https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=1000&q=85"
-    },
-
-    {
-        id: 6,
-        name: "Garden Mojito",
-        description: "Fresh mint, citrus and a refreshing finish.",
-        price: 150,
-        category: "Drinks",
-        meals: [
-            "lunch",
-            "dinner"
-        ],
-        tags: [
-            "fresh",
-            "refreshing",
-            "citrus",
-            "cold"
-        ],
-        image:
-            "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1000&q=85"
-    },
-
-    {
-        id: 7,
-        name: "Iced Coffee",
-        description: "Smooth coffee served chilled.",
-        price: 125,
-        category: "Drinks",
-        meals: [
-            "breakfast",
-            "lunch"
-        ],
-        tags: [
-            "coffee",
-            "morning",
-            "cold",
             "light"
         ],
-        image:
-            "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1000&q=85"
+        "image": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1000&q=85"
     },
-
     {
-        id: 8,
-        name: "Garden Dessert",
-        description: "A sweet finish for your meal.",
-        price: 180,
-        category: "Desserts",
-        meals: [
-            "lunch",
-            "dinner"
-        ],
-        tags: [
-            "sweet",
-            "dessert",
-            "treat"
-        ],
-        image:
-            "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1000&q=85"
-    },
-
-    {
-        id: 9,
-        name: "Chocolate Cake",
-        description: "Rich chocolate cake with a soft centre.",
-        price: 160,
-        category: "Desserts",
-        meals: [
+        "id": 5,
+        "name": "Citrus Cooler",
+        "description": "Refreshing non-alcoholic drink concept item.",
+        "price": 170,
+        "category": "Drinks",
+        "meals": [
             "breakfast",
             "lunch",
             "dinner"
         ],
-        tags: [
-            "sweet",
-            "chocolate",
-            "dessert",
-            "cake"
+        "tags": [
+            "citrus",
+            "refreshing",
+            "cold"
         ],
-        image:
-            "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85"
+        "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=85"
     },
-
     {
-        id: 10,
-        name: "Vanilla Cheesecake",
-        description: "Creamy cheesecake with a smooth finish.",
-        price: 190,
-        category: "Desserts",
-        meals: [
+        "id": 6,
+        "name": "Dessert of the Day",
+        "description": "Sample sweet item for the concept menu.",
+        "price": 190,
+        "category": "Desserts",
+        "meals": [
+            "breakfast",
             "lunch",
             "dinner"
         ],
-        tags: [
+        "tags": [
             "sweet",
-            "cheesecake",
-            "dessert",
-            "creamy"
+            "dessert"
         ],
-        image:
-            "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=1000&q=85"
+        "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=85"
     }
-
 ];
 
 
@@ -397,7 +301,7 @@ document.addEventListener(
 
         setupFloatingActions();
 
-        setupDemoSaleBanner();
+        if (!window.RESTAURANT_CONFIG?.demoPreview) setupDemoSaleBanner();
 
         updateTabIndicator(
             currentPage
@@ -435,7 +339,7 @@ document.addEventListener(
 
 
         /*
-         * Auto-open Garden AI once
+         * Auto-open Menu Assistant once
          */
 
         setTimeout(
@@ -443,16 +347,16 @@ document.addEventListener(
 
                 const hasSeenGardenAI =
                     sessionStorage.getItem(
-                        "fajara-garden-ai-seen"
+                        "scala-restaurant-serrekunda-menu-assistant-seen"
                     );
 
 
-                if (!hasSeenGardenAI) {
+                if (!hasSeenGardenAI && !window.RESTAURANT_CONFIG?.demoPreview) {
 
                     openGardenAI();
 
                     sessionStorage.setItem(
-                        "fajara-garden-ai-seen",
+                        "scala-restaurant-serrekunda-menu-assistant-seen",
                         "true"
                     );
 
@@ -1648,19 +1552,20 @@ if (checkoutButton) {
                 );
 
             const message =
-                `Hello Fajara Garden 👋\n\n` +
+                `Hello Scala Restaurant 👋\n\n` +
                 `I'd like to place this order:\n\n` +
                 `${orderLines}\n\n` +
                 `Total: D${total}\n\n` +
                 `Please confirm availability and the next steps.`;
 
             const whatsappURL =
-                `https://wa.me/2205453305?text=${encodeURIComponent(message)}`;
+                `https://wa.me/2209904984?text=${encodeURIComponent(message)}`;
 
-            window.open(
-                whatsappURL,
-                "_blank"
-            );
+            if (window.RESTAURANT_CONFIG?.demoPreview) {
+                showToast("Concept preview only — sample menu and prices are not confirmed.");
+                return;
+            }
+            window.open(whatsappURL, "_blank");
 
         }
     );
@@ -2801,7 +2706,7 @@ function setupFloatingActions() {
             () => {
 
                 window.location.href =
-                    "tel:+2205453305";
+                    "tel:+2209904984";
 
             }
         );
@@ -2945,14 +2850,15 @@ function setupReservation() {
 
             const reservationMessage =
                 encodeURIComponent(
-                    "Hello Fajara Garden 👋 I would like to reserve a table."
+                    "Hello Scala Restaurant 👋 I would like to reserve a table."
                 );
 
 
-            window.open(
-                `https://wa.me/2205453305?text=${reservationMessage}`,
-                "_blank"
-            );
+            if (window.RESTAURANT_CONFIG?.demoPreview) {
+                showToast("Concept preview only — reservations activate after owner approval.");
+                return;
+            }
+            window.open(`https://wa.me/2209904984?text=${reservationMessage}`, "_blank");
 
         }
     );
@@ -3093,7 +2999,7 @@ function setupGardenAIIntro() {
     if (gardenAIDescription) {
 
         gardenAIDescription.textContent =
-            `I'll check what's available for ${period.label} at Fajara Garden, ask you a few quick questions and build a recommendation around what you actually like.`;
+            `I'll check what's available for ${period.label} at Scala Restaurant, ask you a few quick questions and build a recommendation around what you actually like.`;
 
     }
 
@@ -3296,7 +3202,7 @@ function beginGardenAI() {
 
 
     addAIMessage(
-        `Hey 👋 I'm Garden AI. It's a good time for ${period.label}. I checked the menu and found ${availableItems.length} item${availableItems.length === 1 ? "" : "s"} available for this meal period.`
+        `Hey 👋 I'm Menu Assistant. It's a good time for ${period.label}. I checked the menu and found ${availableItems.length} item${availableItems.length === 1 ? "" : "s"} available for this meal period.`
     );
 
 
@@ -4630,7 +4536,7 @@ function setupDemoSaleBanner() {
 
             <p>
 
-                This Fajara Garden website was
+                This Scala Restaurant website was
                 designed by Israel from
                 <strong>Squashberry Co.</strong>
                 and is available for purchase.
@@ -4730,7 +4636,7 @@ function setupDemoSaleBanner() {
      */
 
     sessionStorage.removeItem(
-        "fajara-demo-sale-dismissed"
+        "scala-restaurant-serrekunda-demo-sale-dismissed"
     );
 
 
@@ -4825,7 +4731,7 @@ function setupDemoSaleBanner() {
 
 
         sessionStorage.setItem(
-            "fajara-demo-sale-dismissed",
+            "scala-restaurant-serrekunda-demo-sale-dismissed",
             "true"
         );
 
